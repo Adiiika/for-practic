@@ -1,0 +1,47 @@
+  <!DOCTYPE html>
+ <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Product-card</title>
+</head>
+<body>
+<div class="background-selection-container">
+   <h1 class="main-title">Выбери свой продукт</h1>   
+   <img src="src/images/background-for-cards.png" alt="Фон для продуктов" class="background-for-cards">
+</div>
+<div class="product-cards-container">
+<ul id="product-cards-list"></ul>
+
+ <template id="product-cards-template">
+    <li class="card-container">
+        <img class="product-image" src="" alt="" width="290px" height="245px">
+        <span class="product-category"></span>
+        <h2 class="product-name"></h2>
+        <p class="product-description"></p>
+        <span class="product-compound">Состав</span>
+        <ul class="product-list-compound">
+        <li class="product-list-item"></li> 
+        </ul>
+        <div class="product-price-container">
+            <b class="product-price-label">Цена</b>
+            <span class="product-price"></span>
+        </div>
+    </li>
+ </template>
+</div>
+<button class="button" id="change-color-first-card">Изменение цвета первой карточки</button>
+<button class="button" id="change-color-all-cards">Изменение цвета во всех карточках</button>
+<button class="button" id="open-website-products">Переход в основной сайт</button>
+<button class="button" id="change-color-button">Изменение цвета кнопки</button>
+<script src="main.js"></script>
+<script type ="module" src="homework-6.js"></script>
+<script type ="module" src="homework-7.js"></script>
+<script type ="module" src="homework-8.js"></script>
+<script type ="module" src="product-cards.js"></script>
+</body>
+</html>
